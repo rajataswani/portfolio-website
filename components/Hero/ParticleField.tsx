@@ -72,11 +72,10 @@ export default function ParticleField({ particleCount = 100 }: ParticleFieldProp
                         value: particleCount,
                     },
                     opacity: {
-                        value: { min: 0.3, max: 0.7 },
+                        value: { min: 0.3, max: 1 },
                         animation: {
                             enable: true,
                             speed: 1,
-                            minimumValue: 0.3,
                         },
                     },
                     shape: {
