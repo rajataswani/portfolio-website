@@ -5,7 +5,7 @@ export const fadeInUp = {
     visible: {
         opacity: 1,
         y: 0,
-        transition: { duration: 0.6, ease: "easeOut" }
+        transition: { duration: 0.6, ease: [0.6, -0.05, 0.01, 0.99] }
     }
 };
 
@@ -22,7 +22,7 @@ export const slideInLeft = {
     visible: {
         opacity: 1,
         x: 0,
-        transition: { duration: 0.8, ease: "easeOut" }
+        transition: { duration: 0.8, ease: [0.6, -0.05, 0.01, 0.99] }
     }
 };
 
@@ -31,7 +31,7 @@ export const slideInRight = {
     visible: {
         opacity: 1,
         x: 0,
-        transition: { duration: 0.8, ease: "easeOut" }
+        transition: { duration: 0.8, ease: [0.6, -0.05, 0.01, 0.99] }
     }
 };
 
@@ -40,7 +40,7 @@ export const scaleIn = {
     visible: {
         opacity: 1,
         scale: 1,
-        transition: { duration: 0.6, ease: "easeOut" }
+        transition: { duration: 0.6, ease: [0.6, -0.05, 0.01, 0.99] }
     }
 };
 
@@ -63,7 +63,7 @@ export const nodePulse = {
         transition: {
             duration: 2,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: [0.4, 0, 0.6, 1]
         }
     }
 };
@@ -72,7 +72,7 @@ export const unlockVariant = {
     locked: { rotate: 0 },
     unlocked: {
         rotate: [0, -10, 10, 0],
-        transition: { duration: 0.6, ease: "easeInOut" }
+        transition: { duration: 0.6, ease: [0.4, 0, 0.6, 1] }
     }
 };
 
@@ -80,7 +80,7 @@ export const hoverScale = {
     rest: { scale: 1 },
     hover: {
         scale: 1.05,
-        transition: { duration: 0.3, ease: "easeInOut" }
+        transition: { duration: 0.3, ease: [0.4, 0, 0.6, 1] }
     }
 };
 
@@ -100,7 +100,7 @@ export const scrollFadeIn = {
         y: 0,
         transition: {
             duration: 0.8,
-            ease: "easeOut"
+            ease: [0.6, -0.05, 0.01, 0.99]
         }
     }
 };
@@ -112,7 +112,7 @@ export const scrollSlideIn = (direction: 'left' | 'right' = 'left') => ({
         x: 0,
         transition: {
             duration: 0.8,
-            ease: "easeOut"
+            ease: [0.6, -0.05, 0.01, 0.99]
         }
     }
 });
@@ -128,7 +128,7 @@ export const cardHover = {
         scale: 1.05,
         transition: {
             duration: 0.3,
-            ease: "easeOut"
+            ease: [0.6, -0.05, 0.01, 0.99]
         }
     }
 };
@@ -141,7 +141,7 @@ export const particleFloat = {
         transition: {
             duration: 6,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: [0.4, 0, 0.6, 1]
         }
     }
 };
@@ -168,7 +168,7 @@ export const blockMining = {
         rotateY: 0,
         transition: {
             duration: 0.8,
-            ease: "easeOut"
+            ease: [0.6, -0.05, 0.01, 0.99]
         }
     }
 };
@@ -181,7 +181,7 @@ export const lineDrawing = {
         opacity: 1,
         transition: {
             duration: 1.5,
-            ease: "easeInOut"
+            ease: [0.4, 0, 0.6, 1]
         }
     }
 };
@@ -194,7 +194,7 @@ export const rippleEffect = {
         opacity: 0,
         transition: {
             duration: 0.6,
-            ease: "easeOut"
+            ease: [0.6, -0.05, 0.01, 0.99]
         }
     }
 };
